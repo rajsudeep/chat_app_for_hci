@@ -38,5 +38,5 @@ Once logged in, the interface will request from you if you want to continue a pr
 * There is also a reset expression button in the case the Subject feels that they weren't expressing emotion even though the app detected something. The "wrong" emotion is recorded alongside the actual emotion that was set with the message the Subject sent.
 
 ## Using Firebase
-Firebase maintains a database that contains all json data of text-messages and expressions sent and recieved. Data is segmented between "Contacts" and "Sessions". In Contacts, you can find all the **subject** users created. In Sessions, you can find a list of conversation sessions marked with unique IDs. Below is an example of what it looks like:
+Firebase maintains a database that contains all json data of text-messages and expressions sent and recieved. Data is segmented between "Contacts" and "Sessions". In Contacts, you can find all the subject users created. In Sessions, you can find a list of conversation sessions marked with unique IDs. Below is an example of what it looks like:
 ![Firebase Database](https://i.imgur.com/f29I1os.png)
