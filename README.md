@@ -20,6 +20,7 @@ This application uses [CocoaPods](./https://cocoapods.org/about) to manage depen
 * This would've created a Podfile visible directly in chat_app_for_hci. Remove this Podfile and replace it with the one located in the backup_pod folder
 * Now on terminal again run:
 ```$ pod install```
+Once this is finished, open the **Chat App For HCI.xcworkspace** 
 
 ## Using the App
 ### Sign In
