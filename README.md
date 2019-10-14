@@ -45,3 +45,6 @@ Once logged in, the interface will request from you if you want to continue a pr
 Firebase maintains a database that contains all json data of text-messages and expressions sent and recieved. Data is segmented between "Contacts" and "Sessions". In Contacts, you can find all the subject users created. In Sessions, you can find a list of conversation sessions marked with unique IDs. Below is an example of what it looks like:
 ![Firebase Database](https://i.imgur.com/f29I1os.png)
 The current database is registered and is called **chathci-2fe3a**, to gain permissions to access and use this database please contact the Author (located below). To create a new database, one must register with the app's bundle ID and create/place a "GoogleService-Info.plist" file created via Firebase. More information about registration can be found [here](https://firebase.google.com/docs/ios/setup).
+
+## Author
+Sudeep Raj - thesudeepraj@gmail.com
