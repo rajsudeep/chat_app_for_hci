@@ -7,6 +7,7 @@ A messenger application that interprets common facial expressions as emotional r
 * iOS
 * Apple's ARKit
 * Firebase
+* JSQMessages
 
 ## Predicting Emotions
 Emotions are predicted directly by facial expressions. The expressions are detected using Apple's ARKit, specifically [ARFaceAnchor](./https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation) which uses coefficents to detect microexpressions of the face. The app currently handles "Happy" (via SmileExpression), "Sad" (via FrownExpression), "Surprise" (via SurpriseExpression), "Angry" (via AngerExpression). Below is a reference to the universal facial expressions humans have.
