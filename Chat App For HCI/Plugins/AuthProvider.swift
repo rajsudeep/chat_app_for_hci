@@ -107,7 +107,7 @@ class AuthProvider {
             //OTHER CASES:
                 
 
-            case .invalidCustomToken:
+             case .invalidCustomToken:
                 loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
                 break;
             case .customTokenMismatch:
@@ -258,6 +258,33 @@ class AuthProvider {
                 loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
                 break;
             case .internalError:
+                loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
+                break;
+            case .webSignInUserInteractionFailure:
+                loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
+                break;
+            case .localPlayerNotAuthenticated:
+                loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
+                break;
+            case .dynamicLinkNotActivated:
+                loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
+                break;
+            case .invalidProviderID:
+                loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
+                break;
+            case .invalidDynamicLinkDomain:
+                loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
+                break;
+            case .rejectedCredential:
+                loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
+                break;
+            case .gameKitNotLinked:
+                loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
+                break;
+            case .missingClientIdentifier:
+                loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
+                break;
+            case .malformedJWT:
                 loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
                 break;
             }
