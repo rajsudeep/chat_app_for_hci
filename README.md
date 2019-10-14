@@ -24,17 +24,21 @@ Once this is finished, open the **Chat App For HCI.xcworkspace**
 
 ## Using the App
 ### Sign In
-You can either sign in with an existing account or by creating a unique 
+You can either sign in with an existing account or by creating a unique credential.
 Since this app is for research purposes, there is a default user defined as **Tester** with the login credentials **tester@mail.com**, password: **123456**, any other user is considered a **Subject**. There is also a **subject@mail.com** with password **123456** for testing purposes. Each user is given a unique id when created, by default Tester is given the ID: lqizrjTo60Q3vTZlo16W0wldNA63.
-* To create a new user, simply type out the credentials in the username and password slots and then press sign up. The username suffix "@mail.com" and password "123456" has been the general set up.
+* To create a new user, simply type out the credentials in the username and password slots and then press sign up. The username suffix "@mail.com" and password "123456" has been the general template.
 * To login, fill the slots with valid credentials and click login
 * Handling users (such as deleting ones not needed anymore) can be done via the Firebase database (more on Firebase next section)
 ### Session Creation
-Once logged in, the interface will request from you if you want to continue a pre-existing session by clicking **Continue Session**. A new session can be created by clicking **New Session**. Each time a new session is created, a unique ID is given to the session and the data corresponding to the session can be found on the Firebase database. It is best for the Tester to only create the new sessions.
+Once logged in, the interface will request from you if you want to continue a pre-existing session by clicking **Continue Session**. A new session can be created by clicking **New Session**. Each time a new session is created, a unique ID is given to the session and the data corresponding to the session can be found on the Firebase database. It is best for the Tester to only create the new sessions during trial runs.
 ### Chatting
 **Note: ONLY one Tester and Subject should be in a session at a time** 
 * Emotions are only read from the Subject side.
-* A subject will know if their emotion was detected via vibration of phone, they and the Tester will see this expression on the Subject's avatar only once the subject has sent a message
+* A subject will know if their emotion was detected via vibration of phone, they and the Tester will see this expression on the Subject's avatar only after the subject has sent a message.
+* Avatars Happy, Sad, Angry, Surprised: ![Happy](./emotes/smileMS.png)
+![Sad](./emotes/sadMS.png)
+![Angry](./emotes/angryMS.png)
+![Surprise](./emotes/stunnedMS.png)
 * There is also a reset expression button in the case the Subject feels that they weren't expressing emotion even though the app detected something. The "wrong" emotion is recorded alongside the actual emotion that was set with the message the Subject sent.
 
 ## Using Firebase
