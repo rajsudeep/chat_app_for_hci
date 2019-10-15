@@ -160,6 +160,7 @@ class ChatVC: JSQMessagesViewController, MessageReceivedDelegate, UINavigationCo
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
         timeMSGSent = DateFormatter.localizedString(from: Date(), dateStyle: .short, timeStyle: .medium);
         let expressionDataString = ", Exp Detected At: " + timeExpressionDetected + ", " + expressionData + " Previous Exp: " + resetEXPData ;
+        resetEXPData = "NA";
         let info = senderId + " MSG Sent: " + timeMSGSent + expressionDataString;
         MessagesHandler.Instance.sendMessage(senderID: info, senderName: currentExpression, text: text);
         self.finishSendingMessage();
